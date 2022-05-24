@@ -22,9 +22,27 @@ if( (navigator.userAgent.match(/Android/i)
 // }else{
 // 	userCelular = false;
 // }
+const buttonOptions = document.querySelector(".buttonOptions");
+const menuMovil = document.querySelector(".menu-movil");
+let state = true;
+const mostrarMenuMovil=(estado)=>{
+	if(state){
+		menuMovil.style.transform = "translateY(0px)"
+		console.log("funciona")
+		state = false;
+	}else{
+		menuMovil.style.transform = "translateY(-1000px)";
+		state = true;
+	}
+	if(estado){
+		menuMovil.style.transform = "translateY(-1000px)";
+	}
+}
 
 if(userCelular){
-	
+	buttonOptions.setAttribute("onclick", "mostrarMenuMovil()")
+}else{
+	buttonOptions.setAttribute("onclick", "mostrarModal('open')")
 }
 
 const scroll =()=>{
@@ -196,6 +214,11 @@ const modificarHtml=(active, title, content, img)=>{
 const modalButton = document.querySelectorAll(".modal-button");
 
 modalButton[0].addEventListener("click",()=>{
+	modificarHtml(false);
+})
+
+modalButton[1].addEventListener("click",()=>{
+	mostrarMenuMovil(true);
 	modificarHtml(true, "Aspiramos llegar a la junta directiva de SIMANA", `The Forest Stewardship Council provides 
 	independent assurance that the wood you buy supports forests managed to the highest standards. 
 	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 
@@ -203,14 +226,16 @@ modalButton[0].addEventListener("click",()=>{
 	mostrarModal("close");
 })
 
-modalButton[1].addEventListener("click",()=>{
+modalButton[2].addEventListener("click",()=>{
+	mostrarMenuMovil(true);
 	modificarHtml(true, "Nuestra MISIÓN", `The Forest Stewardship Council provides 
 	independent assurance that the wood you buy supports forests managed to the highest standards. 
 	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 
 	member-led democracy`, "logo2.png");
 	mostrarModal("close");
 })
-modalButton[2].addEventListener("click",()=>{
+modalButton[3].addEventListener("click",()=>{
+	mostrarMenuMovil(true);
 	modificarHtml(true, "SOMOS PACTO HISTÓRICO", `SThe Forest Stewardship Council provides 
 	independent assurance that the wood you buy supports forests managed to the highest standards. 
 	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 
@@ -218,7 +243,39 @@ modalButton[2].addEventListener("click",()=>{
 	mostrarModal("close");
 })
 
-modalButton[3].addEventListener("click",()=>{
+modalButton[4].addEventListener("click",()=>{
+	mostrarMenuMovil(true);
+	modificarHtml(true, "VOTE BIEN, VOTE 10", `The Forest Stewardship Council provides 
+	independent assurance that the wood you buy supports forests managed to the highest standards. 
+	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 
+	member-led democracy`, "logo.png");
+	mostrarModal("close");
+})
+
+modalButton[5].addEventListener("click",()=>{
+	modificarHtml(true, "Aspiramos llegar a la junta directiva de SIMANA", `The Forest Stewardship Council provides 
+	independent assurance that the wood you buy supports forests managed to the highest standards. 
+	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 
+	member-led democracy`, "logo1.png");
+	mostrarModal("close");
+})
+
+modalButton[6].addEventListener("click",()=>{
+	modificarHtml(true, "Nuestra MISIÓN", `The Forest Stewardship Council provides 
+	independent assurance that the wood you buy supports forests managed to the highest standards. 
+	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 
+	member-led democracy`, "logo2.png");
+	mostrarModal("close");
+})
+modalButton[7].addEventListener("click",()=>{
+	modificarHtml(true, "SOMOS PACTO HISTÓRICO", `SThe Forest Stewardship Council provides 
+	independent assurance that the wood you buy supports forests managed to the highest standards. 
+	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 
+	member-led democracy por nosotros`, "imgs/pacto.png");
+	mostrarModal("close");
+})
+
+modalButton[8].addEventListener("click",()=>{
 	modificarHtml(true, "VOTE BIEN, VOTE 10", `The Forest Stewardship Council provides 
 	independent assurance that the wood you buy supports forests managed to the highest standards. 
 	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 

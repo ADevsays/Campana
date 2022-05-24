@@ -12,6 +12,9 @@ body{
 	margin: 0;
 	overflow-x: hidden;
 }
+.menu-movil{
+	display: none;
+}
 .big-modal{
 	position: fixed;
 	height: 100%;
@@ -595,22 +598,25 @@ footer{
 
 	}
 	/* menu */
-	.big-modal{
-		background: rgb(189,217,73,0.7);
-		width: 25%;
-		height: 25%;
+	.menu-movil{
+		transform: translateY(-1000px);
+		transition: transform 0.5s ease;
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		overflow: hidden;
+		position: absolute;
+		background:#0e0e0eb3;
+		color: white;
+		right: 0;
+		z-index: 999;
+		width: 45%;
+		min-height: 40%;
 	}
-	.modal-menu ul, .modal-menu ul li{
-		margin: 0;
-		margin-top: 20px;
-		padding: 5%;
+	.menu-movil ul li{
+		list-style: none;
+		padding: 15px;
+		border-bottom: 4px solid white;
 	}
-	.fake-header{
-		display: none;
+	.menu-movil ul li:active{
+		color: gray;
 	}
 	
 }
