@@ -24,7 +24,7 @@ if( (navigator.userAgent.match(/Android/i)
 // }
 
 if(userCelular){
-	alert("Eres un usuario de celular y por tanto te odio, hijo de puta")
+	
 }
 
 const scroll =()=>{
