@@ -15,12 +15,16 @@ if( (navigator.userAgent.match(/Android/i)
 	userCelular = false;
 }
 
-let mediaQuery =  window.matchMedia("(max-width: 436px)");
+// let mediaQuery =  window.matchMedia("(max-width: 436px)");
 
-if(mediaQuery.matches){
-	userCelular = true;
-}else{
-	userCelular = false;
+// if(mediaQuery.matches){
+// 	userCelular = true;
+// }else{
+// 	userCelular = false;
+// }
+
+if(userCelular){
+	alert("Eres un usuario de celular y por tanto te odio, hijo de puta")
 }
 
 const scroll =()=>{
@@ -73,8 +77,12 @@ titleFutss.addEventListener("mouseout",()=>{
 	animation("desactive", rellenoHtml, logoMain)
 })
 
+const datosOcultar = document.querySelectorAll(".ocultar");
 const modal = document.querySelector(".big-modal");
 const mostrarModal=(value)=>{
+	datosOcultar.forEach(d=>{
+		d.style.display = "none";
+	})
 	if(value == "open"){
 		modal.style.transform = "translate(0px)";
 		modal.style.transition = "transform 0.5s ease";
@@ -137,7 +145,6 @@ for(let i = 0; i < button1.length; i++){
 	})
 }
 
-const datosOcultar = document.querySelectorAll(".ocultar");
 const main = document.querySelector(".main-principal");
 
 const modificarHtml=(active, title, content, img)=>{
