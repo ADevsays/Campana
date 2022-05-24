@@ -80,9 +80,6 @@ titleFutss.addEventListener("mouseout",()=>{
 const datosOcultar = document.querySelectorAll(".ocultar");
 const modal = document.querySelector(".big-modal");
 const mostrarModal=(value)=>{
-	datosOcultar.forEach(d=>{
-		d.style.display = "none";
-	})
 	if(value == "open"){
 		modal.style.transform = "translate(0px)";
 		modal.style.transition = "transform 0.5s ease";
@@ -254,7 +251,7 @@ const observarD =(entries)=>{
 
 const observerD = new IntersectionObserver(observarD, {
 	root: null,
-	rootMargin: "100px 5100px 0px 0px",
+	rootMargin: "1000px 5100px 0px 0px",
 	threshold: 0.9
 });
 

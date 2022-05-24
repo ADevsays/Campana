@@ -588,6 +588,11 @@ footer{
 	}
 	.izquierda{
 		flex-direction: column-reverse;
+		transform: translate(0px);
+	}
+	.derecha{
+		transform: translate(0px);
+
 	}
 	/* menu */
 	.big-modal{
