@@ -22,6 +22,7 @@ if( (navigator.userAgent.match(/Android/i)
 // }else{
 // 	userCelular = false;
 // }
+const main = document.querySelector(".main-principal");
 const buttonOptions = document.querySelector(".buttonOptions");
 const menuMovil = document.querySelector(".menu-movil");
 let state = true;
@@ -160,36 +161,44 @@ for(let i = 0; i < button1.length; i++){
 	})
 }
 
-const main = document.querySelector(".main-principal");
 
 const modificarHtml=(active, title, content, img)=>{
 	if(active){
 		datosOcultar.forEach(d=>{
 			d.style.display = "none";
 		})
-	
-		main.innerHTML = `	<div class="content-main">
-								<h1>${title}</h1>
-								<h4> ${content}</h4>
-							</div>
-							<div class="img-change">
-								<img src="${img}" alt="">
+		if(userCelular){
+			main.style.height = "100%";
+		}
+		main.innerHTML = `	<div class="main-container">		
+								<div class="content-main">
+									<h1>${title}</h1>
+								</div>
+								<div class="title-img">
+									<h4> ${content}</h4>
+									<div class="img-change">
+										<img src="${img}" alt="">
+									</div>
+								</div>
 							</div>`
+	
 	}else{
 		datosOcultar.forEach(d=>{
 			d.style.display = "flex";
 		})
-		main.innerHTML = `	
-							<div class="logo-main">
+		if(userCelular){
+			main.style.height = "60vh";
+		}
+		main.innerHTML = `	<div class="logo-main">
 									<img src="imgs/funss-logo.png" alt="">
-								</div>
-							<div class="title-futss">
-								<span class="letra"><h4 id="letra">F</h4><h4 class="relleno">uerza</h4></span>
-								<span class="letra"><h4 id="letra">U</h4><h4 class="relleno">nitaria para la</h4></span>
-								<span class="letra"><h4 id="letra">T</h4><h4 class="relleno">ransformación</h4></span>
-								<span class="letra"><h4 id="letra">S</h4><h4 class="relleno">indical y</h4></span>
-								<span class="letra"><h4 id="letra">S</h4><h4 class="relleno">ocial</h4></span>
 							</div>
+								<div class="title-futss">
+									<span class="letra"><h4 id="letra">F</h4><h4 class="relleno">uerza</h4></span>
+									<span class="letra"><h4 id="letra">U</h4><h4 class="relleno">nitaria para la</h4></span>
+									<span class="letra"><h4 id="letra">T</h4><h4 class="relleno">ransformación</h4></span>
+									<span class="letra"><h4 id="letra">S</h4><h4 class="relleno">indical y</h4></span>
+									<span class="letra"><h4 id="letra">S</h4><h4 class="relleno">ocial</h4></span>
+								</div>
 							<img src="imgs/fondo-main.jpg" alt="">`
 			setTimeout(()=>{
 				let rellenoHtml = document.querySelectorAll(".relleno");
