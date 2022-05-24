@@ -467,6 +467,9 @@ footer{
 
 
 @media only screen and (max-width: 436px){
+	.fackerBody{
+		overflow-x: hidden;
+	}
 	.fecha{
 		display: none;
 	}
