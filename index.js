@@ -199,7 +199,7 @@ const modificarHtml=(active, title, content, img)=>{
 									<span class="letra"><h4 id="letra">S</h4><h4 class="relleno">indical y</h4></span>
 									<span class="letra"><h4 id="letra">S</h4><h4 class="relleno">ocial</h4></span>
 								</div>
-							<img src="imgs/fondo-main.jpg" alt="">`
+							<img src="imgs/fondo-main.jpg" alt="" onclick  ="ampliarImg(true)">`
 			setTimeout(()=>{
 				let rellenoHtml = document.querySelectorAll(".relleno");
 				let letraColor = document.querySelectorAll(".letra");
@@ -237,18 +237,32 @@ modalButton[1].addEventListener("click",()=>{
 
 modalButton[2].addEventListener("click",()=>{
 	mostrarMenuMovil(true);
-	modificarHtml(true, "Nuestra MISIÓN", `The Forest Stewardship Council provides 
-	independent assurance that the wood you buy supports forests managed to the highest standards. 
-	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 
-	member-led democracy`, "logo2.png");
+	modificarHtml(true, "Nuestra MISIÓN", `
+	<ul>
+		<li><span>1.</span> Para hacer de nuestro Sindicato una organización AUTÓNOMA E INDEPENDIENTEMENTE!</li>
+		<li><span>2.</span> Para seguir luchando por la defensa de la educación pública como un derecho fundamental con financiación desde el
+		Sistema General de participaciones (SGP) del Estado Colombiano.</li>
+		<li><span>3.</span> Para contribuir en defensa del Régimen Prestacional, el servicio médico asistencial de los maestros y sus beneficiarios.</li>
+		<li><span>4.</span>Para contribuir a la cualificación del maestro, la dignificación de la carrera docente, y hacer la escuela un territorio de paz.</li>
+		<li><span>5.</span>Propender porla construcción de un centro recreacional para el magisterio de Nariño.</li>
+		<li><span>6.</span>Promover la defensa de los recursos naturales renovables y no renovables.</li>
+	</ul>
+	`, "logo2.png");
 	mostrarModal("close");
 })
 modalButton[3].addEventListener("click",()=>{
 	mostrarMenuMovil(true);
-	modificarHtml(true, "SOMOS PACTO HISTÓRICO", `SThe Forest Stewardship Council provides 
-	independent assurance that the wood you buy supports forests managed to the highest standards. 
-	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 
-	member-led democracy por nosotros`, "imgs/pacto.png");
+	modificarHtml(true, "SOMOS PACTO HISTÓRICO", `
+	<ul>
+		<li><span></span>APOYAMOS Y COMPARTIMOS LAS PROPUESTAS DEL PACTO:</li>
+		<li><span>1.</span> TIERRA, CRÉDITO, SEGURIDAD Y SOBERANÍA ALIMENTARIA</li>
+		<li><span>2.</span> SALUD Y PENSIONES JUSTAS</li>
+		<li><span>3.</span> TECHO PARA TODOS</li>
+		<li><span>4.</span>	EDUCACIÓN PARA TODOS Y DE CALIDAD</li>
+		<li><span>5.</span>	REFORMA AL SISTEMA JUDICIAL</li>
+		<li><span>6.</span>	PACTO PARA RECUPERAR LA ECONOMÍA, EL TRABAJO Y LA PRODUCTIVIDAD DEL PAÍS</li>
+	</ul>
+	`, "imgs/pacto.png");
 	mostrarModal("close");
 })
 
@@ -270,17 +284,30 @@ modalButton[5].addEventListener("click",()=>{
 })
 
 modalButton[6].addEventListener("click",()=>{
-	modificarHtml(true, "Nuestra MISIÓN", `The Forest Stewardship Council provides 
-	independent assurance that the wood you buy supports forests managed to the highest standards. 
-	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 
-	member-led democracy`, "logo2.png");
+	modificarHtml(true, "Nuestra MISIÓN", `
+	<ul>
+		<li><span>1.</span> Para hacer de nuestro Sindicato una organización AUTÓNOMA E INDEPENDIENTEMENTE!</li>
+		<li><span>2.</span> Para seguir luchando por la defensa de la educación pública como un derecho fundamental con financiación desde el
+		Sistema General de participaciones (SGP) del Estado Colombiano.</li>
+		<li><span>3.</span> Para contribuir en defensa del Régimen Prestacional, el servicio médico asistencial de los maestros y sus beneficiarios.</li>
+		<li><span>4.</span>Para contribuir a la cualificación del maestro, la dignificación de la carrera docente, y hacer la escuela un territorio de paz.</li>
+		<li><span>5.</span>Propender porla construcción de un centro recreacional para el magisterio de Nariño.</li>
+		<li><span>6.</span>Promover la defensa de los recursos naturales renovables y no renovables.</li>
+	</ul>`, "logo2.png");
 	mostrarModal("close");
 })
 modalButton[7].addEventListener("click",()=>{
-	modificarHtml(true, "SOMOS PACTO HISTÓRICO", `SThe Forest Stewardship Council provides 
-	independent assurance that the wood you buy supports forests managed to the highest standards. 
-	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 
-	member-led democracy por nosotros`, "imgs/pacto.png");
+	modificarHtml(true, "SOMOS PACTO HISTÓRICO", `
+	<ul>
+		<li><span></span>APOYAMOS Y COMPARTIMOS LAS PROPUESTAS DEL PACTO:</li>
+		<li><span>1.</span> TIERRA, CRÉDITO, SEGURIDAD Y SOBERANÍA ALIMENTARIA</li>
+		<li><span>2.</span> SALUD Y PENSIONES JUSTAS</li>
+		<li><span>3.</span> TECHO PARA TODOS</li>
+		<li><span>4.</span>	EDUCACIÓN PARA TODOS Y DE CALIDAD</li>
+		<li><span>5.</span>	REFORMA AL SISTEMA JUDICIAL</li>
+		<li><span>6.</span>	PACTO PARA RECUPERAR LA ECONOMÍA, EL TRABAJO Y LA PRODUCTIVIDAD DEL PAÍS</li>
+	</ul>
+	`, "imgs/pacto.png");
 	mostrarModal("close");
 })
 
@@ -302,8 +329,6 @@ document.querySelector(".button-logo").addEventListener("click",()=>{
 	mostrarModal("close");
 	modificarHtml(false);
 })
-
-const fondo = document.querySelector(".imagen-fondo");
 const buttonEquis = document.querySelector(".equis");
 
 const ampliarImg=(value)=>{
@@ -315,9 +340,7 @@ const ampliarImg=(value)=>{
 	}
 }
 
-fondo.addEventListener("click",()=>{
-	ampliarImg(true);
-})
+
 buttonEquis.addEventListener("click",()=>{
 	ampliarImg(false);
 })
