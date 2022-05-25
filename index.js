@@ -303,6 +303,24 @@ document.querySelector(".button-logo").addEventListener("click",()=>{
 	modificarHtml(false);
 })
 
+const fondo = document.querySelector(".imagen-fondo");
+const buttonEquis = document.querySelector(".equis");
+
+const ampliarImg=(value)=>{
+	const displayImgAmp = document.querySelector(".imagen-ampliada");
+	if(value){
+		displayImgAmp.style.display  = "flex";
+	}else{
+		displayImgAmp.style.display  = "none";
+	}
+}
+
+fondo.addEventListener("click",()=>{
+	ampliarImg(true);
+})
+buttonEquis.addEventListener("click",()=>{
+	ampliarImg(false);
+})
 
 const cardsDerecha= document.querySelectorAll(".derecha");
 const cardsIzquierda= document.querySelectorAll(".izquierda");
