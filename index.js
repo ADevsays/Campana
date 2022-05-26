@@ -162,19 +162,17 @@ for(let i = 0; i < button1.length; i++){
 }
 
 
-const modificarHtml=(active, title, content, img)=>{
+const modificarHtml=(active, title, content, img, clase)=>{
 	if(active){
 		datosOcultar.forEach(d=>{
 			d.style.display = "none";
 		})
-		if(userCelular){
-			main.style.height = "100%";
-		}
-		main.innerHTML = `	<div class="main-container">		
+		main.style.height = "100%";
+		main.innerHTML = `	<div class="main-container ">		
 								<div class="content-main">
 									<h1>${title}</h1>
 								</div>
-								<div class="title-img">
+								<div class="title-img ${clase}">
 									<h4> ${content}</h4>
 									<div class="img-change">
 										<img src="${img}" alt="">
@@ -228,16 +226,32 @@ modalButton[0].addEventListener("click",()=>{
 
 modalButton[1].addEventListener("click",()=>{
 	mostrarMenuMovil(true);
-	modificarHtml(true, "Aspiramos llegar a la junta directiva de SIMANA", `The Forest Stewardship Council provides 
-	independent assurance that the wood you buy supports forests managed to the highest standards. 
-	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 
-	member-led democracy`, "logo1.png");
+	modificarHtml(true, "Aspiramos llegar a la junta directiva de SIMANA", `Soy Gilberto Hernando Tobar Basante, cabeza de lista de FUTSS. Nací el 4 de julio de 1967 en Túquerres. Después de terminar el bachillerato decidí 
+	hacer una licenciatura en educación básica primaria, y posteriormente haría una especialización en administración de la informática educativa, en la Universidad de Santander.
+	He sido docente de básica primaria durante 34 años, estando 19 años en Imués y 15 años en Potosí. Mi experiencia sindical es basta, pues he sido: 
+	<ul>
+		<li><span>1.</span> Presidente de subdirectiva del sindical Imués Potosí, Fiscal de subdirectiva</li>
+		<li><span>2.</span> Fiscal de subdirectiva sindical Imués-Potosí.</li>
+		<li><span>3.</span> Integrante de asamblea de delegados de la reforma estatutaria</li>
+		<li><span>4.</span>	Asistente a juntas nacionales, como eventos de docentes y directivos a nivel nacional</li>
+		<li><span>5.</span> Integrante de los dos últimos congresos de la CUT (Santa Marta y Bogotá).</li>
+	</ul>
+	<div class="title-ul-main">
+		<span> Con mi participación en estos campos sindicales he conseguido </span>
+		<ul>
+			<li><span>1.</span> La afilicación al servicio médico asistencial de docentes municipales</li>
+			<li><span>2.</span> La creación de la secretaria de asuntos territoriales en SIMANA.</li>
+			<li><span>3.</span> La afiliación del fondo prestacional del magisterio de docentes</li>
+			<li><span>4.</span>	La nivelación salarial de docentes municipales y la vinculación en propiedad de docentes que venían siendo contratados.</li>
+		</ul> 
+	</div>
+	`, "imgs/imagen-biografia.jpg", "aside-qn");
 	mostrarModal("close");
 })
 
 modalButton[2].addEventListener("click",()=>{
 	mostrarMenuMovil(true);
-	modificarHtml(true, "Nuestra MISIÓN", `
+	modificarHtml(true, "Nuestras propuestas", `
 	<ul>
 		<li><span>1.</span> Para hacer de nuestro Sindicato una organización AUTÓNOMA E INDEPENDIENTEMENTE!</li>
 		<li><span>2.</span> Para seguir luchando por la defensa de la educación pública como un derecho fundamental con financiación desde el
@@ -247,7 +261,7 @@ modalButton[2].addEventListener("click",()=>{
 		<li><span>5.</span>Propender porla construcción de un centro recreacional para el magisterio de Nariño.</li>
 		<li><span>6.</span>Promover la defensa de los recursos naturales renovables y no renovables.</li>
 	</ul>
-	`, "logo2.png");
+	`, "/imgs/votar.svg", "aside-np");
 	mostrarModal("close");
 })
 modalButton[3].addEventListener("click",()=>{
@@ -262,29 +276,67 @@ modalButton[3].addEventListener("click",()=>{
 		<li><span>5.</span>	REFORMA AL SISTEMA JUDICIAL</li>
 		<li><span>6.</span>	PACTO PARA RECUPERAR LA ECONOMÍA, EL TRABAJO Y LA PRODUCTIVIDAD DEL PAÍS</li>
 	</ul>
-	`, "imgs/pacto.png");
+	`, "imgs/pacto.png", "aside-pacto");
 	mostrarModal("close");
 })
 
 modalButton[4].addEventListener("click",()=>{
 	mostrarMenuMovil(true);
-	modificarHtml(true, "VOTE BIEN, VOTE 10", `The Forest Stewardship Council provides 
-	independent assurance that the wood you buy supports forests managed to the highest standards. 
-	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 
-	member-led democracy`, "logo.png");
+	modificarHtml(true, "VOTE BIEN, VOTE 10", ` 
+	<ul>
+		<span>
+		RESPALDAN: <br>
+		</span>
+	</ul>
+	*Gilberto Hernando Tobar B.   <br>
+	*Luz Angélica Ocaña Rosero <br>
+	*Ana Rosa Gustín Narváez <br>
+	*Eibar Meléndez <br>
+	*Edwin Holman Díaz A. <br>
+	*Alexander Eusebio Díaz <br>
+	*Francisco Wilson Padilla J. <br>
+	*Carlos Armando Saavedra <br>
+	*Floralba Tobar Basante <br>
+	*Jesús Marino Lucano Cruz <br>
+	*Nelder de Jesús Zamora R. <br>
+	*Enid del Rocío Ramírez R. <br>
+	*Blanca Inés Basante T. <br>
+	*Miriam Lucero Tejada <br>
+	*Fabián Meléndez <br>
+	*Carlos Cárdenas <br>
+	*Mireya Rosero <br>
+	*Carlos López <br>
+	*Mireya Vallejo. <br>
+	*Rodrigo Rodríguez R. <br>
+	*Luis César Santacruz <br>`, "imgs/marque-10.jpg", "aside-vote");
 	mostrarModal("close");
 })
 
 modalButton[5].addEventListener("click",()=>{
-	modificarHtml(true, "Aspiramos llegar a la junta directiva de SIMANA", `The Forest Stewardship Council provides 
-	independent assurance that the wood you buy supports forests managed to the highest standards. 
-	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 
-	member-led democracy`, "logo1.png");
+	modificarHtml(true, "Aspiramos llegar a la junta directiva de SIMANA", `Soy Gilberto Hernando Tobar Basante, cabeza de lista de FUTSS. Nací el 4 de julio de 1967 en Túquerres. Después de terminar el bachillerato decidí 
+	hacer una licenciatura en educación básica primaria, y posteriormente haría una especialización en administración de la informática educativa, en la Universidad de Santander.
+	He sido docente de básica primaria durante 34 años, estando 19 años en Imués y 15 años en Potosí. Mi experiencia sindical es basta, pues he sido: 
+	<ul>
+		<li><span>1.</span> Presidente de subdirectiva del sindical Imués Potosí, Fiscal de subdirectiva</li>
+		<li><span>2.</span> Fiscal de subdirectiva sindical Imués-Potosí.</li>
+		<li><span>3.</span> Integrante de asamblea de delegados de la reforma estatutaria</li>
+		<li><span>4.</span>	Asistente a juntas nacionales, como eventos de docentes y directivos a nivel nacional</li>
+		<li><span>5.</span> Integrante de los dos últimos congresos de la CUT (Santa Marta y Bogotá).</li>
+	</ul>
+	<div class="title-ul-main">
+		<span> Con mi participación en estos campos sindicales he conseguido </span>
+		<ul>
+			<li><span>1.</span> La afilicación al servicio médico asistencial de docentes municipales</li>
+			<li><span>2.</span> La creación de la secretaria de asuntos territoriales en SIMANA.</li>
+			<li><span>3.</span> La afiliación del fondo prestacional del magisterio de docentes</li>
+			<li><span>4.</span>	La nivelación salarial de docentes municipales y la vinculación en propiedad de docentes que venían siendo contratados.</li>
+		</ul> 
+	</div>`,  "imgs/imagen-biografia.jpg");
 	mostrarModal("close");
 })
 
 modalButton[6].addEventListener("click",()=>{
-	modificarHtml(true, "Nuestra MISIÓN", `
+	modificarHtml(true, "Nuestras propuestas", `
 	<ul>
 		<li><span>1.</span> Para hacer de nuestro Sindicato una organización AUTÓNOMA E INDEPENDIENTEMENTE!</li>
 		<li><span>2.</span> Para seguir luchando por la defensa de la educación pública como un derecho fundamental con financiación desde el
@@ -293,7 +345,7 @@ modalButton[6].addEventListener("click",()=>{
 		<li><span>4.</span>Para contribuir a la cualificación del maestro, la dignificación de la carrera docente, y hacer la escuela un territorio de paz.</li>
 		<li><span>5.</span>Propender porla construcción de un centro recreacional para el magisterio de Nariño.</li>
 		<li><span>6.</span>Promover la defensa de los recursos naturales renovables y no renovables.</li>
-	</ul>`, "logo2.png");
+	</ul>`, "/imgs/votar.svg");
 	mostrarModal("close");
 })
 modalButton[7].addEventListener("click",()=>{
@@ -312,10 +364,29 @@ modalButton[7].addEventListener("click",()=>{
 })
 
 modalButton[8].addEventListener("click",()=>{
-	modificarHtml(true, "VOTE BIEN, VOTE 10", `The Forest Stewardship Council provides 
-	independent assurance that the wood you buy supports forests managed to the highest standards. 
-	FSC balances the needs of all forest stakeholders, economic, social and environmental - through an open, 
-	member-led democracy`, "logo.png");
+	modificarHtml(true, "VOTE BIEN, VOTE 10", `RESPALDAN: <br>
+	*Gilberto Hernando Tobar B.   <br>
+	*Luz Angélica Ocaña Rosero <br>
+	*Ana Rosa Gustín Narváez <br>
+	*Eibar Meléndez <br>
+	*Edwin Holman Díaz A. <br>
+	*Alexander Eusebio Díaz <br>
+	*Francisco Wilson Padilla J. <br>
+	*Carlos Armando Saavedra <br>
+	*Floralba Tobar Basante <br>
+	*Jesús Marino Lucano Cruz <br>
+	*Nelder de Jesús Zamora R. <br>
+	*Enid del Rocío Ramírez R. <br>
+	*Blanca Inés Basante T. <br>
+	*Miriam Lucero Tejada <br>
+	*Fabián Meléndez <br>
+	*Carlos Cárdenas <br>
+	*Mireya Rosero <br>
+	*Carlos López <br>
+	*Mireya Vallejo. <br>
+	*Rodrigo Rodríguez R. <br>
+	*Luis César Santacruz <br>
+`, "imgs/marque-10.jpg");
 	mostrarModal("close");
 })
 
@@ -386,7 +457,4 @@ const observerI = new IntersectionObserver(observarI, {
 for (let card of cardsIzquierda){
 	observerI.observe(card);
 }
-
-
-
 

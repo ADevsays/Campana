@@ -304,8 +304,8 @@ h4{
 	text-align: center;
 	background: rgb(189,217,73);
 	background: linear-gradient(90deg, rgba(189,217,73,0.9304096638655462) 0%, rgba(225,240,101,1) 100%);
-	color: #ECF881;
-	text-shadow: 3px 2px 3px black ;
+	color: white;
+	text-shadow: 3px 2px 3px rgb(102, 118, 42) ;
 	box-shadow: 2px 3px 25px -7px black;
 	padding: 20px;
 	line-height: 40px;
@@ -321,6 +321,7 @@ h4{
 	font-family: 'Ubuntu', sans-serif;
 	width: 70%;
 	font-size: 1.3em;
+	line-height: 2em;
 }
 .title-img li{
 	list-style: none;
@@ -335,6 +336,11 @@ h4{
 
 .title-img img{
 	height: 380px;
+	width: 350px;
+	margin-left: 20%;
+}
+.title-ul-main{
+	margin-top: 5%;
 }
 .relleno{
 	position: absolute;
@@ -679,7 +685,7 @@ footer{
 		flex-direction: column;
 	}
 	.title-img h4{
-		line-height: 40px;
+		line-height: 1.5em;
 	}
 	 .title-img img{
 		transform: translateX(-25px);
@@ -694,7 +700,16 @@ footer{
 	.imagen-ampliada button:active{
 		background: rgb(150, 170, 71);
 	}
-
+	.aside-qn{
+		margin-top: 35%;
+	}
+	.aside-np{
+	}
+	.aside-pacto{
+		margin-top: -10%;
+	}
+	.aside-vote{
+	}
 } 
 
 @media only screen and (max-width: 401px){
@@ -752,5 +767,14 @@ footer{
 	}
 	.title-img h4{
 		margin-top: 170px;
+	}
+	.aside-np{
+		margin-top: -20%;
+	}
+	.aside-pacto{
+		margin-top: -35%;
+	}
+	.aside-vote{
+		margin-top: -30%;
 	}
 }
