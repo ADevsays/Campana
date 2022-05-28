@@ -245,22 +245,22 @@ modalButton[2].addEventListener("click",()=>{
 	mostrarMenuMovil(true);
 	modificarHtml(true, "Nuestras propuestas", `
 	<ul>
-		<li><span>1. Gestión Administrativa:</span> Dirigencia con transparencia, autonomía, equidad y justicia</li>
-		<li><span>2. Gestión Financiera</span> Administrar los recursos con base den proyectos y presentación de informes periódicos, para que todos los afiliados al sindicato conozcan los ingreos y egresos de SIMANA </li>
-		<li><span>3. Gestión Jurídica</span> Resolber conflictos laborales y sindicales hasta donde lo permitan los estatutos vigentes.</li>
-		<li><span>4. Prestaciones Sociales</span> Insistir en la calidad y calidez de la prestación del servicio médico asisetncial con profesionales idóneos.</li>
-		<li><span>5. Estatuto de la profesión docente</span>Garantizar la incorporación de docentes provisionales sin necesidad de concurso para garantizar su estabilidad laboral. Los ascensos se efectuarán con la acreditación de títulos, experiencia y/o directivo docente.</li>
-		<li><span>6. CEID</span>Creación y arpobación del INSTITUTO PEDAGÓGICO DE SIMANA que permita la cualificación docente y de sus familiares.</li>
-		<li><span>7. Recreación y Deportes</span>Propender por la construcción de un CENTRO RECREACIONAL para el magisterio de Nariño.</li>
-		<li><span>8. Programa de Vivienda Rural</span>En distintas zonas de Nariño se pretende adquirir un pequeño lote económico que permita a los docentes pensionados construir su granja integral como proyecto de vida.</li>
-		<li><span>9. Medio Ambiente</span> Promover la defensa de los recursos naturales, del agua y de la vida.</li>
-		<li><span>10. Formación Sindical</span>Articular procesos de cualificaión y formación sindical entre docentes afiliados a SIMANA y movimientos cívico populares del departamento.</li>
-		<li><span>11. Ética</span> Diseñar, elaborar e implementar el ESTATUTO DE ÉTICA DE SIMANA.</li>
-		<li><span>12. Perspectiva de Género</span> Propiciar espacios dentro de la organización que permita la solución de conflictos de toda índole, especialmente en población LGBT.</li>
-		<li><span>13. Fiscalía</span>Dar cumplimiento a los estatutos vigentes en lo que tiene que ver con la vigilancia, control, transparencia y resolución de conflictos.</li>
-		<li><span>14. Comunicaciones</span>Constituir desde la organización "Emisora comunitaria de SIMANA".</li>
-		<li><span>15. Salud</span>Dar inicio a la creación de la entidad de salud (público-privada) de SIMANA.</li>
-	</ul>
+	<li><span>1. Gestión Administrativa:</span> Dirigencia con transparencia, autonomía, equidad y justicia</li>
+	<li><span>2. Gestión Financiera</span> Administrar los recursos con base den proyectos y presentación de informes periódicos, para que todos los afiliados al sindicato conozcan los ingreos y egresos de SIMANA </li>
+	<li><span>3. Gestión Jurídica</span> Resolber conflictos laborales y sindicales hasta donde lo permitan los estatutos vigentes.</li>
+	<li><span>4. Prestaciones Sociales</span> Insistir en la calidad y calidez de la prestación del servicio médico asisetncial con profesionales idóneos. Consolidar la retroactividad en las cesantías para docentes vinculados entre 1990 y 1995</li>
+	<li><span>5. Estatuto de la profesión docente</span>Alcanzar la vinculación en propiedad de los docentes y/o directivos docentes provisionales sin concurso, pero con los demás requisitos de ley ( títulos obtenidos, experiencia laboral...); A través de un paragrafo transitorio ( art13) del nuevo estatuto docente.</li>
+	<li><span>6. CEID</span>Creación y arpobación del INSTITUTO PEDAGÓGICO DE SIMANA que permita la cualificación docente y de sus familiares.</li>
+	<li><span>7. Recreación y Deportes</span>Propender por la construcción de un CENTRO RECREACIONAL para el magisterio de Nariño.</li>
+	<li><span>8. Programa de Vivienda Rural</span>En diferentes municipios de Nariño, adquirir un lote de terreno que permita a docentes y pensionados constituir su granja integral con su respectiva vivienda que le sirva como proyecto de vida.</li>
+	<li><span>9. Medio Ambiente</span> Promover la defensa de los recursos naturales, del agua y de la vida.</li>
+	<li><span>10. Formación Sindical</span>Articular procesos de cualificaión y formación sindical entre docentes afiliados a SIMANA y movimientos cívico populares del departamento.</li>
+	<li><span>11. Ética</span> Diseñar, elaborar e implementar el ESTATUTO DE ÉTICA DE SIMANA.</li>
+	<li><span>12. Perspectiva de Género</span> Propiciar espacios dentro de la organización que permita la solución de conflictos de toda índole, especialmente en población LGBT.</li>
+	<li><span>13. Fiscalía</span>Dar cumplimiento a los estatutos vigentes en lo que tiene que ver con la vigilancia, control, transparencia y resolución de conflictos.</li>
+	<li><span>14. Comunicaciones</span>Constituir desde la organización "Emisora comunitaria de SIMANA".</li>
+	<li><span>15. Salud</span>Dar inicio a la creación de la entidad de salud (público-privada) de SIMANA.</li>
+</ul>
 	`, "/imgs/votar.svg", "aside-np");
 	mostrarModal("close");
 })
@@ -341,11 +341,11 @@ modalButton[6].addEventListener("click",()=>{
 	<li><span>1. Gestión Administrativa:</span> Dirigencia con transparencia, autonomía, equidad y justicia</li>
 	<li><span>2. Gestión Financiera</span> Administrar los recursos con base den proyectos y presentación de informes periódicos, para que todos los afiliados al sindicato conozcan los ingreos y egresos de SIMANA </li>
 	<li><span>3. Gestión Jurídica</span> Resolber conflictos laborales y sindicales hasta donde lo permitan los estatutos vigentes.</li>
-	<li><span>4. Prestaciones Sociales</span> Insistir en la calidad y calidez de la prestación del servicio médico asisetncial con profesionales idóneos.</li>
-	<li><span>5. Estatuto de la profesión docente</span>Garantizar la incorporación de docentes provisionales sin necesidad de concurso para garantizar su estabilidad laboral. Los ascensos se efectuarán con la acreditación de títulos, experiencia y/o directivo docente.</li>
+	<li><span>4. Prestaciones Sociales</span> Insistir en la calidad y calidez de la prestación del servicio médico asisetncial con profesionales idóneos. Consolidar la retroactividad en las cesantías para docentes vinculados entre 1990 y 1995</li>
+	<li><span>5. Estatuto de la profesión docente</span>Alcanzar la vinculación en propiedad de los docentes y/o directivos docentes provisionales sin concurso, pero con los demás requisitos de ley ( títulos obtenidos, experiencia laboral...); A través de un paragrafo transitorio ( art13) del nuevo estatuto docente.</li>
 	<li><span>6. CEID</span>Creación y arpobación del INSTITUTO PEDAGÓGICO DE SIMANA que permita la cualificación docente y de sus familiares.</li>
 	<li><span>7. Recreación y Deportes</span>Propender por la construcción de un CENTRO RECREACIONAL para el magisterio de Nariño.</li>
-	<li><span>8. Programa de Vivienda Rural</span>En distintas zonas de Nariño se pretende adquirir un pequeño lote económico que permita a los docentes pensionados construir su granja integral como proyecto de vida.</li>
+	<li><span>8. Programa de Vivienda Rural</span>En diferentes municipios de Nariño, adquirir un lote de terreno que permita a docentes y pensionados constituir su granja integral con su respectiva vivienda que le sirva como proyecto de vida.</li>
 	<li><span>9. Medio Ambiente</span> Promover la defensa de los recursos naturales, del agua y de la vida.</li>
 	<li><span>10. Formación Sindical</span>Articular procesos de cualificaión y formación sindical entre docentes afiliados a SIMANA y movimientos cívico populares del departamento.</li>
 	<li><span>11. Ética</span> Diseñar, elaborar e implementar el ESTATUTO DE ÉTICA DE SIMANA.</li>
