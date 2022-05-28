@@ -3,9 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Lobster&display=swap');
-:root{
-	
-}
 body{
 	font-family: 'Roboto', sans-serif;
 	font-family: 'Ubuntu', sans-serif;
@@ -701,14 +698,13 @@ footer{
 		background: rgb(150, 170, 71);
 	}
 	.aside-qn{
-		margin-top: 35%;
+		margin-top: 50%;
 	}
 	.aside-np{
+		margin-top: 95%;
 	}
 	.aside-pacto{
 		margin-top: -10%;
-	}
-	.aside-vote{
 	}
 } 
 
@@ -768,8 +764,11 @@ footer{
 	.title-img h4{
 		margin-top: 170px;
 	}
+	.aside-qn{
+		margin-top: 45%;
+	}
 	.aside-np{
-		margin-top: -20%;
+		margin-top: 75%;
 	}
 	.aside-pacto{
 		margin-top: -35%;

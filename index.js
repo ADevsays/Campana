@@ -15,13 +15,6 @@ if( (navigator.userAgent.match(/Android/i)
 	userCelular = false;
 }
 
-// let mediaQuery =  window.matchMedia("(max-width: 436px)");
-
-// if(mediaQuery.matches){
-// 	userCelular = true;
-// }else{
-// 	userCelular = false;
-// }
 const main = document.querySelector(".main-principal");
 const buttonOptions = document.querySelector(".buttonOptions");
 const menuMovil = document.querySelector(".menu-movil");
@@ -52,7 +45,6 @@ const scroll =()=>{
 setTimeout(()=>{
 	scroll();
 },100)
-
 
 const colores = ["#FFFF3C","#009323","#9F2FB2","#392FB2","#F83B23","#FFFF3C","#009323","#9F2FB2","#392FB2","#F83B23"];
 const titleFutss = document.querySelector(".title-futss");
@@ -227,21 +219,21 @@ modalButton[0].addEventListener("click",()=>{
 modalButton[1].addEventListener("click",()=>{
 	mostrarMenuMovil(true);
 	modificarHtml(true, "Aspiramos llegar a la junta directiva de SIMANA", `Soy Gilberto Hernando Tobar Basante, cabeza de lista de FUTSS. Nací el 4 de julio de 1967 en Túquerres. Después de terminar el bachillerato decidí 
-	hacer una licenciatura en educación básica primaria, y posteriormente haría una especialización en administración de la informática educativa, en la Universidad de Santander.
-	He sido docente de básica primaria durante 34 años, estando 19 años en Imués y 15 años en Potosí. Mi experiencia sindical es basta, pues he sido: 
+	hacer una licenciatura en educación básica primaria en la universidad Javeriana. Posteriormente haría una especialización en administración de la informática educativa, en la Universidad de Santander.
+	He sido docente de básica primaria durante 35 años, estando 19 años en Imués, 15 años en Potosí y 1 año como rector de la institución educativa Agropuecuaria Santa Ana. Mi experiencia sindical es basta, pues he sido: 
 	<ul>
-		<li><span>1.</span> Presidente de subdirectiva del sindical Imués Potosí, Fiscal de subdirectiva</li>
+		<li><span>1.</span> Presidente de subdirectiva del sindical Imués Potosí.</li>
 		<li><span>2.</span> Fiscal de subdirectiva sindical Imués-Potosí.</li>
-		<li><span>3.</span> Integrante de asamblea de delegados de la reforma estatutaria</li>
-		<li><span>4.</span>	Asistente a juntas nacionales, como eventos de docentes y directivos a nivel nacional</li>
+		<li><span>3.</span> Integrante de asamblea de delegados de la reforma estatutaria en 8 oportunidades.</li>
+		<li><span>4.</span>	Asistente a juntas nacionales, como eventos de docentes y directivos docentes de nivel nacional.</li>
 		<li><span>5.</span> Integrante de los dos últimos congresos de la CUT (Santa Marta y Bogotá).</li>
 	</ul>
 	<div class="title-ul-main">
 		<span> Con mi participación en estos campos sindicales he conseguido </span>
 		<ul>
-			<li><span>1.</span> La afilicación al servicio médico asistencial de docentes municipales</li>
-			<li><span>2.</span> La creación de la secretaria de asuntos territoriales en SIMANA.</li>
-			<li><span>3.</span> La afiliación del fondo prestacional del magisterio de docentes</li>
+			<li><span>1.</span> La afilicación al servicio médico asistencial de docentes municipales.</li>
+			<li><span>2.</span> La creación de la secretaria de asuntos territoriales en SIMANA y reforma estatutaria enfocada a la no reelección inmediata.</li>
+			<li><span>3.</span> La afiliación del fondo prestacional del magisterio de docentes.</li>
 			<li><span>4.</span>	La nivelación salarial de docentes municipales y la vinculación en propiedad de docentes que venían siendo contratados.</li>
 		</ul> 
 	</div>
@@ -253,13 +245,21 @@ modalButton[2].addEventListener("click",()=>{
 	mostrarMenuMovil(true);
 	modificarHtml(true, "Nuestras propuestas", `
 	<ul>
-		<li><span>1.</span> Para hacer de nuestro Sindicato una organización AUTÓNOMA E INDEPENDIENTEMENTE!</li>
-		<li><span>2.</span> Para seguir luchando por la defensa de la educación pública como un derecho fundamental con financiación desde el
-		Sistema General de participaciones (SGP) del Estado Colombiano.</li>
-		<li><span>3.</span> Para contribuir en defensa del Régimen Prestacional, el servicio médico asistencial de los maestros y sus beneficiarios.</li>
-		<li><span>4.</span>Para contribuir a la cualificación del maestro, la dignificación de la carrera docente, y hacer la escuela un territorio de paz.</li>
-		<li><span>5.</span>Propender porla construcción de un centro recreacional para el magisterio de Nariño.</li>
-		<li><span>6.</span>Promover la defensa de los recursos naturales renovables y no renovables.</li>
+		<li><span>1. Gestión Administrativa:</span> Dirigencia con transparencia, autonomía, equidad y justicia</li>
+		<li><span>2. Gestión Financiera</span> Administrar los recursos con base den proyectos y presentación de informes periódicos, para que todos los afiliados al sindicato conozcan los ingreos y egresos de SIMANA </li>
+		<li><span>3. Gestión Jurídica</span> Resolber conflictos laborales y sindicales hasta donde lo permitan los estatutos vigentes.</li>
+		<li><span>4. Prestaciones Sociales</span> Insistir en la calidad y calidez de la prestación del servicio médico asisetncial con profesionales idóneos.</li>
+		<li><span>5. Estatuto de la profesión docente</span>Garantizar la incorporación de docentes provisionales sin necesidad de concurso para garantizar su estabilidad laboral. Los ascensos se efectuarán con la acreditación de títulos, experiencia y/o directivo docente.</li>
+		<li><span>6. CEID</span>Creación y arpobación del INSTITUTO PEDAGÓGICO DE SIMANA que permita la cualificación docente y de sus familiares.</li>
+		<li><span>7. Recreación y Deportes</span>Propender por la construcción de un CENTRO RECREACIONAL para el magisterio de Nariño.</li>
+		<li><span>8. Programa de Vivienda Rural</span>En distintas zonas de Nariño se pretende adquirir un pequeño lote económico que permita a los docentes pensionados construir su granja integral como proyecto de vida.</li>
+		<li><span>9. Medio Ambiente</span> Promover la defensa de los recursos naturales, del agua y de la vida.</li>
+		<li><span>10. Formación Sindical</span>Articular procesos de cualificaión y formación sindical entre docentes afiliados a SIMANA y movimientos cívico populares del departamento.</li>
+		<li><span>11. Ética</span> Diseñar, elaborar e implementar el ESTATUTO DE ÉTICA DE SIMANA.</li>
+		<li><span>12. Perspectiva de Género</span> Propiciar espacios dentro de la organización que permita la solución de conflictos de toda índole, especialmente en población LGBT.</li>
+		<li><span>13. Fiscalía</span>Dar cumplimiento a los estatutos vigentes en lo que tiene que ver con la vigilancia, control, transparencia y resolución de conflictos.</li>
+		<li><span>14. Comunicaciones</span>Constituir desde la organización "Emisora comunitaria de SIMANA".</li>
+		<li><span>15. Salud</span>Dar inicio a la creación de la entidad de salud (público-privada) de SIMANA.</li>
 	</ul>
 	`, "/imgs/votar.svg", "aside-np");
 	mostrarModal("close");
@@ -314,21 +314,21 @@ modalButton[4].addEventListener("click",()=>{
 
 modalButton[5].addEventListener("click",()=>{
 	modificarHtml(true, "Aspiramos llegar a la junta directiva de SIMANA", `Soy Gilberto Hernando Tobar Basante, cabeza de lista de FUTSS. Nací el 4 de julio de 1967 en Túquerres. Después de terminar el bachillerato decidí 
-	hacer una licenciatura en educación básica primaria, y posteriormente haría una especialización en administración de la informática educativa, en la Universidad de Santander.
-	He sido docente de básica primaria durante 34 años, estando 19 años en Imués y 15 años en Potosí. Mi experiencia sindical es basta, pues he sido: 
+	hacer una licenciatura en educación básica primaria en la universidad Javeriana. Posteriormente haría una especialización en administración de la informática educativa, en la Universidad de Santander.
+	He sido docente de básica primaria durante 35 años, estando 19 años en Imués, 15 años en Potosí y 1 año como rector de la institución educativa Agropuecuaria Santa Ana. Mi experiencia sindical es basta, pues he sido: 
 	<ul>
-		<li><span>1.</span> Presidente de subdirectiva del sindical Imués Potosí, Fiscal de subdirectiva</li>
+		<li><span>1.</span> Presidente de subdirectiva del sindical Imués Potosí.</li>
 		<li><span>2.</span> Fiscal de subdirectiva sindical Imués-Potosí.</li>
-		<li><span>3.</span> Integrante de asamblea de delegados de la reforma estatutaria</li>
-		<li><span>4.</span>	Asistente a juntas nacionales, como eventos de docentes y directivos a nivel nacional</li>
+		<li><span>3.</span> Integrante de asamblea de delegados de la reforma estatutaria en 8 oportunidades.</li>
+		<li><span>4.</span>	Asistente a juntas nacionales, como eventos de docentes y directivos docentes de nivel nacional.</li>
 		<li><span>5.</span> Integrante de los dos últimos congresos de la CUT (Santa Marta y Bogotá).</li>
 	</ul>
 	<div class="title-ul-main">
 		<span> Con mi participación en estos campos sindicales he conseguido </span>
 		<ul>
-			<li><span>1.</span> La afilicación al servicio médico asistencial de docentes municipales</li>
-			<li><span>2.</span> La creación de la secretaria de asuntos territoriales en SIMANA.</li>
-			<li><span>3.</span> La afiliación del fondo prestacional del magisterio de docentes</li>
+			<li><span>1.</span> La afilicación al servicio médico asistencial de docentes municipales.</li>
+			<li><span>2.</span> La creación de la secretaria de asuntos territoriales en SIMANA y reforma estatutaria enfocada a la no reelección inmediata.</li>
+			<li><span>3.</span> La afiliación del fondo prestacional del magisterio de docentes.</li>
 			<li><span>4.</span>	La nivelación salarial de docentes municipales y la vinculación en propiedad de docentes que venían siendo contratados.</li>
 		</ul> 
 	</div>`,  "imgs/imagen-biografia.jpg");
@@ -338,14 +338,22 @@ modalButton[5].addEventListener("click",()=>{
 modalButton[6].addEventListener("click",()=>{
 	modificarHtml(true, "Nuestras propuestas", `
 	<ul>
-		<li><span>1.</span> Para hacer de nuestro Sindicato una organización AUTÓNOMA E INDEPENDIENTEMENTE!</li>
-		<li><span>2.</span> Para seguir luchando por la defensa de la educación pública como un derecho fundamental con financiación desde el
-		Sistema General de participaciones (SGP) del Estado Colombiano.</li>
-		<li><span>3.</span> Para contribuir en defensa del Régimen Prestacional, el servicio médico asistencial de los maestros y sus beneficiarios.</li>
-		<li><span>4.</span>Para contribuir a la cualificación del maestro, la dignificación de la carrera docente, y hacer la escuela un territorio de paz.</li>
-		<li><span>5.</span>Propender porla construcción de un centro recreacional para el magisterio de Nariño.</li>
-		<li><span>6.</span>Promover la defensa de los recursos naturales renovables y no renovables.</li>
-	</ul>`, "/imgs/votar.svg");
+	<li><span>1. Gestión Administrativa:</span> Dirigencia con transparencia, autonomía, equidad y justicia</li>
+	<li><span>2. Gestión Financiera</span> Administrar los recursos con base den proyectos y presentación de informes periódicos, para que todos los afiliados al sindicato conozcan los ingreos y egresos de SIMANA </li>
+	<li><span>3. Gestión Jurídica</span> Resolber conflictos laborales y sindicales hasta donde lo permitan los estatutos vigentes.</li>
+	<li><span>4. Prestaciones Sociales</span> Insistir en la calidad y calidez de la prestación del servicio médico asisetncial con profesionales idóneos.</li>
+	<li><span>5. Estatuto de la profesión docente</span>Garantizar la incorporación de docentes provisionales sin necesidad de concurso para garantizar su estabilidad laboral. Los ascensos se efectuarán con la acreditación de títulos, experiencia y/o directivo docente.</li>
+	<li><span>6. CEID</span>Creación y arpobación del INSTITUTO PEDAGÓGICO DE SIMANA que permita la cualificación docente y de sus familiares.</li>
+	<li><span>7. Recreación y Deportes</span>Propender por la construcción de un CENTRO RECREACIONAL para el magisterio de Nariño.</li>
+	<li><span>8. Programa de Vivienda Rural</span>En distintas zonas de Nariño se pretende adquirir un pequeño lote económico que permita a los docentes pensionados construir su granja integral como proyecto de vida.</li>
+	<li><span>9. Medio Ambiente</span> Promover la defensa de los recursos naturales, del agua y de la vida.</li>
+	<li><span>10. Formación Sindical</span>Articular procesos de cualificaión y formación sindical entre docentes afiliados a SIMANA y movimientos cívico populares del departamento.</li>
+	<li><span>11. Ética</span> Diseñar, elaborar e implementar el ESTATUTO DE ÉTICA DE SIMANA.</li>
+	<li><span>12. Perspectiva de Género</span> Propiciar espacios dentro de la organización que permita la solución de conflictos de toda índole, especialmente en población LGBT.</li>
+	<li><span>13. Fiscalía</span>Dar cumplimiento a los estatutos vigentes en lo que tiene que ver con la vigilancia, control, transparencia y resolución de conflictos.</li>
+	<li><span>14. Comunicaciones</span>Constituir desde la organización "Emisora comunitaria de SIMANA".</li>
+	<li><span>15. Salud</span>Dar inicio a la creación de la entidad de salud (público-privada) de SIMANA.</li>
+</ul>`, "/imgs/votar.svg");
 	mostrarModal("close");
 })
 modalButton[7].addEventListener("click",()=>{
@@ -457,4 +465,3 @@ const observerI = new IntersectionObserver(observarI, {
 for (let card of cardsIzquierda){
 	observerI.observe(card);
 }
-
